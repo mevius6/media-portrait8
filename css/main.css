@@ -303,19 +303,7 @@ header > .main-img {
         display: block;
         clear: both;
     }
-
-    .grid .img {
-        float: right;
-    }
-
-    .grid.media-flip .img {
-        float: left;
-    }
-
-    .grid.media-flip > * {
-        margin: 0 auto;
-    }
-
+    
     @supports (display: grid) {
         /* override */
         .grid > *,
@@ -333,7 +321,7 @@ header > .main-img {
 
         header {
             grid:
-                "img h1"
+                "img ."
                 /1fr 1fr;
         }
 
