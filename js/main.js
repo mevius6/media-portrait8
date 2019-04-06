@@ -10,7 +10,7 @@ const animateHeader = function(Header, ratio) {
     }
 };
 
-const Headers = document.querySelectorAll(".grid h2");
+const Headers = document.querySelectorAll(".page__grid h2");
 const HeadersObserver = new IntersectionObserver(
     entries => {
         return entries.forEach(e => {
@@ -36,7 +36,7 @@ const animateParagraph = function(Paragraph, ratio) {
     }
 };
 
-const Paragraphs = document.querySelectorAll(".grid p");
+const Paragraphs = document.querySelectorAll(".page__grid p");
 const ParagraphsObserver = new IntersectionObserver(
     entries => {
         return entries.forEach(e => {

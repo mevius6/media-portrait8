@@ -1,7 +1,7 @@
 $(function() {
-    jQuery("body").addClass("loading");
+    $("body").addClass("page__loading");
 });
-$(window).on("load", function(e) {
-    $(".loader-wrap").fadeOut();
-    jQuery("body").removeClass("loading");
+$(window).on("load", function() {
+    $(".page__loader-wrap").fadeOut();
+    $("body").removeClass("page__loading");
 });
