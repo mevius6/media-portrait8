@@ -184,7 +184,6 @@ p.in-view {
 }
 h1,
 h2 {
-    margin: 2.75rem 0 1rem;
     font-family: "Zangezi", serif;
     font-weight: 400;
     line-height: 1.15;
@@ -199,9 +198,16 @@ h1 {
     flex-flow: column;
     align-content: center;
     justify-content: center;
-    padding: 4vw calc(var(--spacing) * 3);
 }
+
+@media (max-width: 600px) {
+    h1 {
+        padding: 4vw calc(var(--spacing) * 3) 0;
+    }
+}
+
 h2 {
+    margin: 2.75rem 0 1rem;
     font-size: 1.999em;
     opacity: 0.8;
     font-variation-settings: "Weig" 0;
@@ -265,6 +271,7 @@ h1 a:hover {
 }
 .page__header > * {
     flex: 1;
+    margin-bottom: 0;
 }
 .page__header > .main-img {
     width: 100%;
@@ -394,7 +401,6 @@ h1 a:hover {
     h1 {
         font-size: 5.653em;
         text-align: center;
-        margin-bottom: 0;
     }
     h2 {
         font-size: 2.827em;

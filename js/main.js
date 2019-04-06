@@ -17,7 +17,7 @@ const HeadersObserver = new IntersectionObserver(
             animateHeader(e.target, e.intersectionRatio);
         });
     },
-    { threshold: 0.01 }
+    { threshold: 1.0 }
 );
 for (const Header of Headers) {
     HeadersObserver.observe(Header);
@@ -43,7 +43,7 @@ const ParagraphsObserver = new IntersectionObserver(
             animateParagraph(e.target, e.intersectionRatio);
         });
     },
-    { threshold: 0.01 }
+    { threshold: 1.0 }
 );
 for (const Paragraph of Paragraphs) {
     ParagraphsObserver.observe(Paragraph);
