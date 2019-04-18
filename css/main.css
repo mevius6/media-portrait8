@@ -48,8 +48,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     margin: 0;
     border: 0;
     padding: 0;
@@ -65,8 +65,8 @@ html {
 }
 
 @font-face {
-    font-family: "Zangezi";
-    src: url("/fonts/ZangeziVar04.woff2") format("woff2-variations");
+    font-family: Zangezi;
+    src: url(../fonts/ZangeziVar04.woff2) format("woff2-variations");
     font-style: normal;
     font-stretch: normal;
     font-weight: normal;
@@ -74,22 +74,25 @@ html {
 }
 
 body {
-    margin-top: 0;
-    min-height: 100vh;
     --color-fg: hsl(0, 0%, 100%);
     --color-bg: hsl(0, 0%, 96.9%);
     --color-bd: hsl(0, 0%, 15.7%);
     --color-hl: hsl(240, 100%, 50%);
+    --fs-h1:;
+    --fs-h2:;
+    --fs-h3:;
     --spacing: 1.6%;
+    margin-top: 0;
+    min-height: 100vh;
     background: var(--color-bg);
     font-family: "Zangezi", serif;
     font-weight: 400;
     line-height: 1.45;
     color: var(--color-bd);
-    -webkit-font-feature-settings: "kern" 1, "liga" 1;
-    -moz-font-feature-settings: "kern" 1, "liga" 1;
-    -ms-font-feature-settings: "kern" 1, "liga" 1;
-    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-feature-settings: "kern", "liga";
+    -moz-font-feature-settings: "kern", "liga";
+    -ms-font-feature-settings: "kern", "liga";
+    font-feature-settings: "kern", "liga";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -112,13 +115,13 @@ body.page__loading {
 }
 
 .page__loader {
+    position: relative;
     width: 2.5em;
     height: 2.5em;
-    position: relative;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.circle,
+.circle1,
 .circle2 {
     top: 0;
     left: 0;
@@ -259,7 +262,7 @@ h1 a:hover {
 /* ========= LT ========= */
 
 .page__header {
-    --bg-img: url("/images/img1.jpg");
+    --bg-img: url(../images/img1.jpg);
     width: 100vw;
     height: 100vh;
     grid-area: hd;
@@ -306,7 +309,6 @@ h1 a:hover {
     display: flex;
     flex-flow: column;
     max-width: var(--col-w);
-    /* padding-bottom: 0; override */
 }
 .page__grid--multi-col-txt > .content {
     grid-area: inherit;
