@@ -22,7 +22,7 @@ const HeadersObserver = new IntersectionObserver(
 for (const Header of Headers) {
     HeadersObserver.observe(Header);
     HeadersObserver.observe(Header.closest("article"));
-}
+};
 
 const animateParagraph = function(Paragraph, ratio) {
     if (ratio > 0) {
