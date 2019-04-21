@@ -123,8 +123,8 @@ body.page__loading {
     margin: 0 auto;
 }
 
-.circle1,
-.circle2 {
+.circle-1,
+.circle-2 {
     top: 0;
     left: 0;
     width: 100%;
@@ -137,7 +137,7 @@ body.page__loading {
     animation: bounce 2s infinite ease-in-out;
 }
 
-.circle2 {
+.circle-2 {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
 }
