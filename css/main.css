@@ -64,7 +64,15 @@ a {
     display: Fallback;
 }
 
+:root {
+    --zangezivar-aalt: "aalt" off;
+    --zangezivar-case: "case" off;
+    --zangezivar-lnum: "lnum" off;
+    --zangezivar-onum: "onum" off;
+}
+
 body {
+    --zangezivar-case: "case" on;
     --color-fg: hsl(0, 0%, 100%);
     --color-bg: hsl(0, 0%, 96.9%);
     --color-bd: hsl(0, 0%, 15.7%);
@@ -85,7 +93,7 @@ body {
     -webkit-font-feature-settings: "kern", "liga";
     -moz-font-feature-settings: "kern", "liga";
     -ms-font-feature-settings: "kern", "liga";
-    font-feature-settings: "kern", "liga";
+    font-feature-settings: "kern", "liga", var(--zangezivar-aalt), var(--zangezivar-case), var(--zangezivar-lnum), var(--zangezivar-onum);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -173,7 +181,6 @@ h1 {
     font-size: var(--fs-h2);
     font-variation-settings: "Weig" 0; /* Light */
     text-transform: uppercase;
-
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -184,7 +191,7 @@ h2 {
     font-size: var(--fs-h3);
     opacity: 1;
     font-variation-settings: "Weig" 500; /* SemiLight */
-} 
+}
 
 @media (max-width: 600px) {
     h1 {
@@ -391,7 +398,8 @@ h2 {
         transform: translateZ(1px);
         -webkit-transition: font-variation-settings 1.5s, opacity 1.5s,
             -webkit-transform 1.5s;
-        -o-transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
+        -o-transition: font-variation-settings 1.5s, opacity 1.5s,
+            transform 1.5s;
         transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
     }
     h2.in-view {
