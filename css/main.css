@@ -171,7 +171,7 @@ h2 {
 h1 {
     margin-top: 0;
     font-size: var(--fs-h2);
-    font-variation-settings: "Weig" 0;
+    font-variation-settings: "Weig" 0; /* Light */
     text-transform: uppercase;
 
     display: flex;
@@ -179,20 +179,18 @@ h1 {
     align-content: center;
     justify-content: center;
 }
+h2 {
+    margin: 2.75rem 0 1rem;
+    font-size: var(--fs-h3);
+    opacity: 1;
+    font-variation-settings: "Weig" 500; /* SemiLight */
+} 
 
 @media (max-width: 600px) {
     h1 {
         padding: 4vw calc(var(--spacing) * 3) 0;
     }
 }
-
-h2 {
-    margin: 2.75rem 0 1rem;
-    font-size: var(--fs-h3);
-    opacity: 1;
-    font-variation-settings: "Weig" 500;
-}
-
 
 @-webkit-keyframes variation {
     0% {
