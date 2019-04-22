@@ -1,15 +1,16 @@
-/* ========== Normalize ========== */
-
 html {
+    font-size: 1em;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 article,
-figcaption,
-figure,
 footer,
 header,
+main,
 section {
     display: block;
 }
@@ -37,16 +38,6 @@ a {
     color: inherit;
     background-color: transparent;
 }
-
-/* ========= BS ========= */
-
-html {
-    font-size: 1em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -170,22 +161,6 @@ p {
     margin-bottom: 1.25em;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    opacity: 0.8;
-    font-variation-settings: "Weig" 0;
-    -webkit-transform: translateZ(1px);
-    -ms-transform: translateZ(1px);
-    transform: translateZ(1px);
-    -webkit-transition: font-variation-settings 2s, opacity 2s,
-        -webkit-transform 2s;
-    -o-transition: font-variation-settings 2s, opacity 2s, transform 2s;
-    transition: font-variation-settings 2s, opacity 2s, transform 2s;
-}
-p.in-view {
-    opacity: 1;
-    font-variation-settings: "Weig" 400;
-    -webkit-transform: translateZ(1px);
-    -ms-transform: translateZ(1px);
-    transform: translateZ(1px);
 }
 h1,
 h2 {
@@ -214,30 +189,10 @@ h1 {
 h2 {
     margin: 2.75rem 0 1rem;
     font-size: var(--fs-h3);
-    opacity: 0.8;
-    font-variation-settings: "Weig" 0;
-    -webkit-transform: translateZ(1px);
-    -ms-transform: translateZ(1px);
-    transform: translateZ(1px);
-    -webkit-transition: font-variation-settings 1.5s, opacity 1.5s,
-        -webkit-transform 1.5s;
-    -o-transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
-    transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
+    opacity: 1;
+    font-variation-settings: "Weig" 500;
 }
-h2.in-view {
-    opacity: 0.99;
-    font-variation-settings: "Weig" 800;
-    -webkit-transform: translateZ(1px);
-    -ms-transform: translateZ(1px);
-    transform: translateZ(1px);
-}
-h1 a:hover {
-    -webkit-animation: variation 0.8s ease-in-out infinite alternate;
-    -moz-animation: variation 0.8s ease-in-out infinite alternate;
-    -ms-animation: variation 0.8s ease-in-out infinite alternate;
-    -o-animation: variation 0.8s ease-in-out infinite alternate;
-    animation: variation 0.8s ease-in-out infinite alternate;
-}
+
 
 @-webkit-keyframes variation {
     0% {
@@ -401,13 +356,52 @@ h1 a:hover {
 
     p {
         font-size: var(--fs-h4);
+        opacity: 0.8;
+        font-variation-settings: "Weig" 0;
+        -webkit-transform: translateZ(1px);
+        -ms-transform: translateZ(1px);
+        transform: translateZ(1px);
+        -webkit-transition: font-variation-settings 2s, opacity 2s,
+            -webkit-transform 2s;
+        -o-transition: font-variation-settings 2s, opacity 2s, transform 2s;
+        transition: font-variation-settings 2s, opacity 2s, transform 2s;
+    }
+    p.in-view {
+        opacity: 1;
+        font-variation-settings: "Weig" 400;
+        -webkit-transform: translateZ(1px);
+        -ms-transform: translateZ(1px);
+        transform: translateZ(1px);
     }
     h1 {
         font-size: var(--fs-h1);
         text-align: center;
     }
+    h1 a:hover {
+        -webkit-animation: variation 0.8s ease-in-out infinite alternate;
+        -moz-animation: variation 0.8s ease-in-out infinite alternate;
+        -ms-animation: variation 0.8s ease-in-out infinite alternate;
+        -o-animation: variation 0.8s ease-in-out infinite alternate;
+        animation: variation 0.8s ease-in-out infinite alternate;
+    }
     h2 {
+        opacity: 0.8;
         font-size: var(--fs-h2);
+        font-variation-settings: "Weig" 0;
+        -webkit-transform: translateZ(1px);
+        -ms-transform: translateZ(1px);
+        transform: translateZ(1px);
+        -webkit-transition: font-variation-settings 1.5s, opacity 1.5s,
+            -webkit-transform 1.5s;
+        -o-transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
+        transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
+    }
+    h2.in-view {
+        opacity: 0.99;
+        font-variation-settings: "Weig" 800;
+        -webkit-transform: translateZ(1px);
+        -ms-transform: translateZ(1px);
+        transform: translateZ(1px);
     }
 }
 
