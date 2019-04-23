@@ -73,6 +73,10 @@ a {
 .zangezivar-case {
     --zangezivar-case: "case" on;
 }
+span {
+    --zangezivar-case: "case" on;
+    font-feature-settings: "kern", "liga", var(--zangezivar-aalt), var(--zangezivar-case), var(--zangezivar-lnum), var(--zangezivar-onum);
+}
 
 body {
     --color-fg: hsl(0, 0%, 100%);
