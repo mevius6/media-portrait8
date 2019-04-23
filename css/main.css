@@ -288,7 +288,6 @@ body.page__loading {
 }
 
 @media screen and (min-width: 600px) {
-    /* clearfix */
     .page__grid:after {
         content: "";
         display: block;
@@ -296,7 +295,6 @@ body.page__loading {
     }
 
     @supports (display: grid) {
-        /* override */
         .page__grid > *,
         .page__grid--flip > * {
             margin: 0;
