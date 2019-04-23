@@ -41,12 +41,11 @@ a {
 *,
 *::before,
 *::after {
-    margin: 0;
-    border: 0;
-    padding: 0;
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -71,8 +70,11 @@ a {
     --zangezivar-onum: "onum" off;
 }
 
-body {
+.zangezivar-case {
     --zangezivar-case: "case" on;
+}
+
+body {
     --color-fg: hsl(0, 0%, 100%);
     --color-bg: hsl(0, 0%, 96.9%);
     --color-bd: hsl(0, 0%, 15.7%);
@@ -83,7 +85,6 @@ body {
     --fs-h3: 1.999em;
     --fs-h4: 1.414em;
     --spacing: 1.6%;
-    margin-top: 0;
     min-height: 100vh;
     background: var(--color-bg);
     font-family: "Zangezi", serif;
@@ -98,7 +99,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-
 body.page__loading {
     overflow: hidden;
 }
@@ -163,42 +163,6 @@ body.page__loading {
     }
 }
 
-p {
-    font-size: var(--fs-bs);
-    font-weight: 300;
-    margin-bottom: 1.25em;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-h1,
-h2 {
-    font-family: "Zangezi", serif;
-    font-weight: 400;
-    line-height: 1.15;
-}
-h1 {
-    margin-top: 0;
-    font-size: var(--fs-h2);
-    font-variation-settings: "Weig" 0; /* Light */
-    text-transform: uppercase;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-}
-h2 {
-    margin: 2.75rem 0 1rem;
-    font-size: var(--fs-h3);
-    opacity: 1;
-    font-variation-settings: "Weig" 500; /* SemiLight */
-}
-
-@media (max-width: 600px) {
-    h1 {
-        padding: 4vw calc(var(--spacing) * 3) 0;
-    }
-}
-
 @-webkit-keyframes variation {
     0% {
         color: var(--color-bd);
@@ -206,7 +170,7 @@ h2 {
     }
     100% {
         color: var(--color-hl);
-        font-variation-settings: "Weig" 1000;
+        font-variation-settings: "Weig" 1000; /* Regular */
     }
 }
 
@@ -221,7 +185,45 @@ h2 {
     }
 }
 
-/* ========= LT ========= */
+.paragraph,
+.main-heading,
+.heading {
+    font-family: "Zangezi", serif;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.paragraph {
+    font-size: var(--fs-bs);
+    font-weight: 300;
+    margin-bottom: 1.25em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.heading {
+    margin: 2.75rem 0 1rem;
+    font-size: var(--fs-h3);
+    opacity: 1;
+    font-variation-settings: "Weig" 500; /* SemiLight */
+}
+
+.main-heading {
+    margin-top: 0;
+    font-size: var(--fs-h2);
+    font-variation-settings: "Weig" 0; /* Light */
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .main-heading {
+        padding: 4vw calc(var(--spacing) * 3) 0;
+    }
+}
 
 .page__header {
     --bg-img: url(../images/img1.jpg);
@@ -359,7 +361,7 @@ h2 {
         padding: var(--spacing);
     }
 
-    p {
+    .paragraph {
         font-size: var(--fs-h4);
         opacity: 0.8;
         font-variation-settings: "Weig" 0;
@@ -371,25 +373,15 @@ h2 {
         -o-transition: font-variation-settings 2s, opacity 2s, transform 2s;
         transition: font-variation-settings 2s, opacity 2s, transform 2s;
     }
-    p.in-view {
+    .paragraph.in-view {
         opacity: 1;
         font-variation-settings: "Weig" 400;
         -webkit-transform: translateZ(1px);
         -ms-transform: translateZ(1px);
         transform: translateZ(1px);
     }
-    h1 {
-        font-size: var(--fs-h1);
-        text-align: center;
-    }
-    h1 a:hover {
-        -webkit-animation: variation 0.8s ease-in-out infinite alternate;
-        -moz-animation: variation 0.8s ease-in-out infinite alternate;
-        -ms-animation: variation 0.8s ease-in-out infinite alternate;
-        -o-animation: variation 0.8s ease-in-out infinite alternate;
-        animation: variation 0.8s ease-in-out infinite alternate;
-    }
-    h2 {
+
+    .heading {
         opacity: 0.8;
         font-size: var(--fs-h2);
         font-variation-settings: "Weig" 0;
@@ -402,12 +394,24 @@ h2 {
             transform 1.5s;
         transition: font-variation-settings 1.5s, opacity 1.5s, transform 1.5s;
     }
-    h2.in-view {
+    .heading.in-view {
         opacity: 0.99;
         font-variation-settings: "Weig" 800;
         -webkit-transform: translateZ(1px);
         -ms-transform: translateZ(1px);
         transform: translateZ(1px);
+    }
+
+    .main-heading {
+        font-size: var(--fs-h1);
+        text-align: center;
+    }
+    .main-heading a:hover {
+        -webkit-animation: variation 0.8s ease-in-out infinite alternate;
+        -moz-animation: variation 0.8s ease-in-out infinite alternate;
+        -ms-animation: variation 0.8s ease-in-out infinite alternate;
+        -o-animation: variation 0.8s ease-in-out infinite alternate;
+        animation: variation 0.8s ease-in-out infinite alternate;
     }
 }
 
