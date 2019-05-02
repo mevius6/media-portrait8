@@ -1,13 +1,10 @@
-html{font-size:1em;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}article,footer,header,main,section{display:block}img,svg{vertical-align:middle}img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border-style:none}body{margin:0}h1{font-size:2em;margin:.67em 0}a{display:inline-block;text-decoration:none;color:inherit;background-color:transparent}
-
+html{font-size:1em;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box}article,footer,header,main,section{display:block}img,svg{vertical-align:middle}img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border-style:none}body{margin:0}h1{font-size:2em;margin:.67em 0}a{display:inline-block;text-decoration:none;color:inherit;background-color:transparent}
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 ::selection {
@@ -77,14 +74,12 @@ body.page__loading {
     width: 100%;
     height: 100vh;
 }
-
 .page__loader {
     position: relative;
     width: 2.5em;
     height: 2.5em;
     margin: 0 auto;
 }
-
 .circle-1,
 .circle-2 {
     top: 0;
@@ -98,7 +93,6 @@ body.page__loading {
     -webkit-animation: bounce 2s infinite ease-in-out;
     animation: bounce 2s infinite ease-in-out;
 }
-
 .circle-2 {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
@@ -113,7 +107,6 @@ body.page__loading {
         -webkit-transform: scale(1);
     }
 }
-
 @keyframes bounce {
     0%,
     100% {
@@ -136,7 +129,6 @@ body.page__loading {
         font-variation-settings: "Weig" 1000; /* Regular */
     }
 }
-
 @keyframes variation {
     0% {
         color: var(--color-bd);
@@ -189,7 +181,7 @@ body.page__loading {
 }
 
 .page__header {
-    --bg-img: url(/images/img1.jpg);
+    --bg-img: url(/img/1.jpg);
     width: 100vw;
     height: 100vh;
     grid-area: hd;
