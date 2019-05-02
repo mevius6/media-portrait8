@@ -53,7 +53,7 @@ body {
     --spacing: 1.6%;
     min-height: 100vh;
     background: var(--color-bg);
-    font-family: "Zangezi", serif;
+    font-family: Zangezi, serif;
     font-weight: 400;
     line-height: 1.45;
     color: var(--color-bd);
@@ -192,7 +192,7 @@ body.page__loading {
 }
 
 .page__header {
-    --bg-img: url(../images/img1.jpg);
+    --bg-img: url(/images/img1.jpg);
     width: 100vw;
     height: 100vh;
     grid-area: hd;
