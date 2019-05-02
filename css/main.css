@@ -32,9 +32,6 @@ html{font-size:1em;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-
     --zangezivar-onum: "onum" off;
 }
 
-.zangezivar-case {
-    --zangezivar-case: "case" on;
-}
 span {
     --zangezivar-case: "case" on;
     font-feature-settings: "kern", "liga", var(--zangezivar-aalt), var(--zangezivar-case), var(--zangezivar-lnum), var(--zangezivar-onum);
