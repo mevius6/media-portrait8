@@ -280,14 +280,14 @@ body.page__loading {
                 "hd hd" auto
                 "bd img"
                 "bd img"
-                /1fr 1fr;
+                / 1fr 1fr;
         }
 
         .page__grid--flip {
             grid:
                 "img bd"
                 "img bd"
-                /1fr 1fr;
+                / 1fr 1fr;
         }
 
         .page__grid--multi-col-txt {
