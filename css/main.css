@@ -181,10 +181,6 @@ body.page__loading {
     font-size: var(--fs-h2);
     font-variation-settings: "Weig" 0; /* Light */
     text-transform: uppercase;
-    /*display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;*/
 }
 
 @media (max-width: 600px) {
