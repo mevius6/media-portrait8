@@ -7,6 +7,12 @@ html{font-size:1em;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-
     box-sizing: inherit;
 }
 
+::-moz-selection {
+    background: var(--color-hl);
+    color: var(--color-fg);
+    text-shadow: none;
+}
+
 ::selection {
     background: var(--color-hl);
     color: var(--color-fg);
@@ -32,6 +38,13 @@ html{font-size:1em;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-
 span {
     --zangezivar-case: "case" on;
     font-feature-settings: "kern", "liga", var(--zangezivar-aalt), var(--zangezivar-case), var(--zangezivar-lnum), var(--zangezivar-onum);
+}
+
+.message {
+    margin: 0.2em 0;
+    background: #fff;
+    color: #333;
+    padding: 0.2em 0;
 }
 
 body {
