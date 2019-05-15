@@ -362,11 +362,11 @@ body.page__loading {
 		text-align: center;
 	}
 	.main-heading a:hover {
-		-webkit-animation: variation 0.8s ease-in-out infinite alternate;
-		-moz-animation: variation 0.8s ease-in-out infinite alternate;
-		-ms-animation: variation 0.8s ease-in-out infinite alternate;
-		-o-animation: variation 0.8s ease-in-out infinite alternate;
-		animation: variation 0.8s ease-in-out infinite alternate;
+		-webkit-animation: variation .8s ease-in-out infinite alternate;
+		-moz-animation: variation .8s ease-in-out infinite alternate;
+		-ms-animation: variation .8s ease-in-out infinite alternate;
+		-o-animation: variation .8s ease-in-out infinite alternate;
+		animation: variation .8s ease-in-out infinite alternate;
 	}
 }
 
