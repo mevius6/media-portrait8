@@ -170,7 +170,7 @@ body {
 	max-width: var(--col-max-w);
 }
 
-.page__grid--two-col-text > .content {
+.page__grid--two-col-bd > .content {
 	grid-area: inherit;
 }
 
@@ -222,7 +222,7 @@ body {
 				/ 1fr 1fr;
 		}
 
-		.page__grid--two-col-text {
+		.page__grid--two-col-bd {
 			align-items: baseline;
 		}
 
