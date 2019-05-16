@@ -126,7 +126,6 @@ body {
 }
 
 .page__header {
-	--bg-img: url(/img/1.jpg);
 	width: 100vw;
 	height: 100vh;
 	grid-area: hd;
@@ -143,7 +142,7 @@ body {
 .page__header > .main-img {
 	width: 100%;
 	height: 100%;
-	background: center / cover no-repeat var(--bg-img);
+	background: center / cover no-repeat url(/img/1.jpg);
 }
 
 .page__footer {
