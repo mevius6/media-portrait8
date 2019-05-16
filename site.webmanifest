@@ -1,0 +1,16 @@
+{
+  "lang": "ru-RU",
+  "dir": "ltr",
+  "short_name": "media-portrait-8",
+  "name": "Сергей Пацюк | Интервью",
+  "description": "Фото и текст: Букалова Людмила",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#cf0",
+  "theme_color": "#cf0"
+}
