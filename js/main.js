@@ -10,7 +10,7 @@
 		}
 	}
 
-	const Headers = document.querySelectorAll(".content .heading")
+	const Headers = document.querySelectorAll(".grid__item-text .heading")
 	const HeadersObserver = new IntersectionObserver(
 		entries => {
 			return entries.forEach(e => {
@@ -35,7 +35,7 @@
 		}
 	}
 
-	const Paragraphs = document.querySelectorAll(".content .paragraph")
+	const Paragraphs = document.querySelectorAll(".grid__item-text .paragraph")
 	const ParagraphsObserver = new IntersectionObserver(
 		entries => {
 			return entries.forEach(e => {
