@@ -1,7 +1,7 @@
 {
 	const animateHeader = function(Header, ratio) {
 		if (ratio > 0) {
-			if (false && Header.tagName === "h2") {
+			if (false && Header.tagName === "H2") {
 			} else {
 				Header.classList.add("in-view")
 			}
@@ -26,7 +26,7 @@
 
 	const animateParagraph = function(Paragraph, ratio) {
 		if (ratio > 0) {
-			if (false && Paragraph.tagName === "p") {
+			if (false && Paragraph.tagName === "P") {
 			} else {
 				Paragraph.classList.add("in-view")
 			}
